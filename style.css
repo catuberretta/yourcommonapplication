@@ -1,40 +1,64 @@
 h1 {
     font-family: 'Libre Baskerville', serif;
     font-size: 24px;
+    text-align: left;
+    color: #8c1a35;
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
     font-size: 16px;
+    text-align: left;
 }
 
+
+body {
+    background: #f3f2ee;
+}
+
+#intro h1 {
+    max-width: 600px;
+    margin-left: 100px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#intro p {
+    margin-left: 100px;
+    color: white;
+}
+
+
 #header {
-    height: 60px;
+    height: 80px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 9999;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.45);
 }
 
 #logo-wrapper {
     display: block;
-    width: 150px;
-    height: 60px;
+    margin-left: 30px;
+    width: 170px;
+    height: 80px;
     padding: 0;
     float: left;
     background-repeat: no-repeat;
+    background-position: center;
     background-size: 92%;
-    background-image: url(commonapplogo.jpeg);
-
+    background-image: url(img/commonapplogo.png);
 }
 
 #donate-link {
     float: right;
-    height: 60px;
-    line-height: 45px;
+    height: 50px;
+    line-height: 40px;
     font-size: 16px;
     font-size: 1rem;
+    margin: 15px;
 }
 
 .active {
@@ -60,6 +84,8 @@ a:hover {
     background: #f3f2ee;
     padding: 110px 0 250px;
     text-align: center;
+    background-image: url(img/introImg.jpg);
+    background-size: cover;
 }
 
 .main-quote-box {
@@ -67,6 +93,7 @@ a:hover {
     border: 3px solid #97C047;
     max-width: 850px;
     margin: auto;
+    margin-top: 80px;
     text-align: center;
     padding: 60px 20px;
     color: #1f1f1f;
@@ -74,24 +101,42 @@ a:hover {
 
 
 .icon {
-    padding: 40px;
-    padding-top: 70px;
+    height: 150px;
+    width: 150px;
 }
 
-#inform {
-    height: 700px;
-    padding: 110px 0 250px;
-
+.icons {
+    text-align: left;
 }
+
+.iconTitle {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+/* #inform {
+    background: #f3f2ee;
+} */
 
 .main-inform-box {
-    background: #f3f2ee;
+    background: white;
     max-width: 850px;
-    margin: auto;
     text-align: center;
-    padding: 60px 20px;
-    margin-bottom: 0;
+    padding: 50px;
     color: #1c1c1c;
+    margin-top: 80px;
+    margin-left: 150px;
+}
+
+.second-inform-box {
+    max-width: 850px;
+    text-align: center;
+    padding: 50px;
+    color: #1c1c1c;
+    margin-bottom: 80px;
+    margin-left: 150px;
 }
 
 .circle-button {
@@ -104,43 +149,106 @@ a:hover {
     text-align: center;
     margin: auto;
     position: absolute;
-    bottom: 335px;
+    bottom: 275px;
     left: 0;
     right: 0;
 }
 
 #demo {
     height: 700px;
-    background: #f3f2ee;
+    background: #8c1a35;
     padding: 110px 0 250px;
+    text-align: center;
+    overflow: scroll;
+}
+
+
+
+#arrowIcon {
+    height: 15px;
+}
+
+#commonAppMock {
+    height: 800px;
+    width: auto;
+}
+
+#testHeader {
+    max-width: 900px;
+    padding-bottom: 30px;
+}
+
+
+#reminder {
+    background: #8c1a35;
+    height: 200px;
+    padding: 40px;
+}
+
+.reminder-box {
+    border-top: 3px solid #97C047;
+    border-bottom: 3px solid #97C047;
+    position: relative;
+    margin-top: 10px;
+    padding: 45px 25px 25px;
     text-align: center;
 }
 
+#reminder h1 {
+    color: white;
+    margin-left: 100px;
+}
+
+#sign {
+    height: 200px;
+    padding: 40px;
+}
+
+#sign h1 {
+    padding-bottom: 30px;
+}
+
+#cta {
+    line-height: 50px;
+    width: 190px;
+    display: inline-block;
+    background: #97C047;
+    height: 60px;
+    padding: 5px 20px;
+    color: #fff;
+    font-family: "Libre Baskerville", Georgia, serif;
+    font-size: 30px;
+    margin-left: 430px;
+    padding-bottom: 30px;
+}
+
+#cta-wrapper {
+    padding-bottom: 60px;
+}
+
+
 #testimonials {
-    height: 700px;
-    padding: 110px 0 250px;
+    padding: 60px;
     text-align: center;
+}
+
+.testimonialText {
+    padding-top: 60px;
 }
 
 .testimonial-box {
-    background: #f3f2ee;
-    max-width: 600px;
-    padding: 100px 50px;
+    background: white;
+    max-width: 900px;
     color: #1c1c1c;
-
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 50px;
 }
 
-.testImg {
-    box-shadow: 10px 10px 5px grey;
-
+.testimonial-box img {
+    width: 350px;
 }
 
-#test-pic-1 {
-    height: 400px;
-    width: 400px;
-    margin-right: 100px;
-    background-image: url(TestImg1.jpg)
+.testimonial-pic {
+    padding: 30px;
 }
