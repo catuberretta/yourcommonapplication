@@ -62,7 +62,7 @@ body {
 }
 
 .active {
-    width: 100px;
+    width: 80px;
     display: inline-block;
     background: #97C047;
     height: 60px;
